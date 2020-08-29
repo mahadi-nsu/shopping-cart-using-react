@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Items from './data/components/item/items';
-import Cart from './data/components/cart/cart';
 
+import Cart from './components/cart/cart';
+import Item from './components/items/items';
 function App() {
   return (
     <div className="app">
-      <div className = "app-items">
-        <Items></Items>
-        <Cart></Cart>
+      <div className="app-items">
+       <Item></Item>
+       <Cart></Cart>
       </div>
     </div>
   );
