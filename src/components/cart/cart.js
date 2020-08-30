@@ -1,7 +1,7 @@
 import React from 'react';
 import './cart.css';
 
-export default function Cart({ cartData }) {
+export default function Cart({ cartData, removeCartItem }) {
     const total = cartData.reduce((sum, cart) => sum + cart.cost, 0);
     return (
         <div className="cart-style">
@@ -10,7 +10,7 @@ export default function Cart({ cartData }) {
                 {cartData.map((product, idx) =>
                     <div className="cart-item-style" key={idx}>
                         <p>
-                            {product.name} - {product.cost}
+                            {product.name} - {product.cost} - <button onClick={() => removeCartItem(product)}>remove</button>
                         </p>
 
                     </div>
