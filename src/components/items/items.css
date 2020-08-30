@@ -3,4 +3,22 @@
     height: 620px;
     width: 70%;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
   }
+
+
+.items-style .individual-product{
+  width: 150px;
+  max-height : 10px;
+  padding-right: 15px;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.individual-product img{
+  width: 100px;
+  height: 50px;
+}  
